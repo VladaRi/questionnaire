@@ -1,0 +1,89 @@
+.main-header {
+	position: relative;
+
+	&__menu {
+		position: relative;
+		font-size: 14px;
+		margin-bottom: 30px;
+		margin-top: 33px;
+
+		@media screen and (max-width: 768px) {
+			margin-top: 65px;
+		}		
+	}
+
+	&__menu-list {
+		text-align: center;
+
+		.active {
+			a { 
+				color: #353535;
+			}
+		}
+
+		@media screen and (max-width: 768px) {
+			display: none;
+		}
+	}
+
+	&__menu-item {
+		display: inline-block;
+		padding-right: 71px;
+
+		a {
+			color: #4A689E;
+		}
+
+		&:hover {
+			a {
+				color: #353535;
+			}
+		}
+
+		&:last-child {
+			padding-right: 0;
+		}
+	}
+
+	&__icon-menu-bars {
+		display: none;
+
+		@media screen and (max-width: 768px) {
+			position: absolute;
+			top: -45px;
+			right: 28px;
+			display: block;
+			font-size: 25px;
+			color: #9F9F9F;
+		}
+	}
+}
+
+.main-header.open-block{
+
+	.main-header__menu-list{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		display: block;
+		background: #FFF;
+		margin-top: -27px;
+	}
+
+	.main-header__menu-item {
+		display: block;
+		padding-right: 0;
+		padding-bottom: 15px;
+	}
+
+	.main-header__icon-menu-bars {
+		&:before {
+			display: none;
+		}
+
+		&:after {
+			.icomoon ('\e911');
+		}
+	}
+}

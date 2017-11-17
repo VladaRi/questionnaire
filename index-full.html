@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+	<title>Главная</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/css/select2.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css"/>
+	<!--<link href="css/slick.css" rel="stylesheet"> -->
+</head>
+<body>
+	<header class="main-header b-wrap">
+		<nav class="main-header__menu">
+			<ul class="main-header__menu-list">
+				<li class="main-header__menu-item active"><a href="">Личная информация</a></li>
+				<li class="main-header__menu-item"><a href="">Опыт</a></li>
+				<li class="main-header__menu-item"><a href="">JavaScript</a></li>
+				<li class="main-header__menu-item"><a href="">О себе</a></li>
+			</ul>
+		</nav>
+		<i class="main-header__icon-menu-bars icon-menu-bars"></i>
+	</header>
+
+	<div class="main-title-bg">
+		<div class="b-wrap main-title">
+			<h1 class="main-title__text">Анкета</h1>
+		</div>
+	</div>
+
+	<form class="questionnaire-form b-wrap">
+		<div class="fields-group fields-group-1">
+			<div class="fields-group__header">
+				<h3 class="fields-group__title">Личная информация</h3>
+			</div>
+			<div class="fields-group__body">
+				<input type="" name="" class="questionnaire-input" placeholder="ФИО" value="Рипич Владислава Владиславовна">
+				<div class="select-birthday-year">
+					<select class="birthday-year" name="birthday-year">
+						<option></option>
+						<option value="90">1990</option>
+						<option value="91">1991</option>
+						<option value="91">1992</option>
+						<option value="93">1993</option>
+						<option value="94">1994</option>
+						<option value="95">1995</option>
+						<option value="96" selected>1996</option>
+						<option value="97">1997</option>
+						<option value="98">1998</option>
+						<option value="99">1999</option>
+						<option value="2000">2000</option>
+					</select>
+				</div>
+				<input type="" name="" class="questionnaire-input" placeholder="Место проживания" value="Украина, Закарпатская обл, Ужгород">
+				<input type="" name="" class="questionnaire-input" placeholder="Skype" value="Vlada Ripych">
+				<input type="" name="" class="questionnaire-input" placeholder="E-mail" value="vladochka.ripych@gmail.com">
+			</div>
+		</div>
+
+		<div class="fields-group fields-group-2">
+			<div class="fields-group__header">
+				<h3 class="fields-group__title">Расскажите о своем опыте</h3>
+			</div>
+			<div class="fields-group__body">
+				<ul class="checkbox-list">
+					<li class="checkbox-item">
+						<input type="checkbox" name="gjgkljgoie" id="gjgkljgoie" class="checkbox-item__input" checked>
+						<label for="gjgkljgoie" class="checkbox-item__title">БЭМ/OOCSS</label>
+					</li>
+					<li class="checkbox-item">
+						<input class="checkbox-item__input" type="checkbox" name="vvrergegrer" id="vvrergegrer" checked>
+						<label for="vvrergegrer" class="checkbox-item__title ">Верстаю семантично</label>
+					</li>
+					<li class="checkbox-item">
+						<input class="checkbox-item__input" type="checkbox" name="rdgthygd" id="rdgthygd">
+						<label for="rdgthygd" class="checkbox-item__title ">Webpack</label>
+					</li>
+					<li class="checkbox-item">
+						<input class="checkbox-item__input" type="checkbox" name="wergtyjhtdfs" id="wergtyjhtdfs" checked>
+						<label for="wergtyjhtdfs" class="checkbox-item__title ">Stylus/LESS/SASS</label>
+					</li>
+					<li class="checkbox-item">
+						<input class="checkbox-item__input" type="checkbox" name="" id="sefrgtfhyu">
+						<label for="sefrgtfhyu" class="checkbox-item__title ">ES2015/ES2016</label>
+					</li>
+					<li class="checkbox-item">
+						<input class="checkbox-item__input" type="checkbox" name="" id="wroiurefsd" checked>
+						<label for="wroiurefsd" class="checkbox-item__title ">jQuery</label>
+					</li>
+					<li class="checkbox-item">
+						<input class="checkbox-item__input" type="checkbox" name="" id="tuiokjmhnbvc" checked>
+						<label for="tuiokjmhnbvc" class="checkbox-item__title ">Работаю с SVG</label>
+					</li>
+					<li class="checkbox-item">
+						<input class="checkbox-item__input" type="checkbox" name="" id="srtuiokj">
+						<label for="srtuiokj" class="checkbox-item__title ">Gulp/GRUNT</label>
+					</li>
+					<li class="checkbox-item">
+						<input class="checkbox-item__input" type="checkbox" name="" id="wertyiukjmhnbv" checked>
+						<label for="wertyiukjmhnbv" class="checkbox-item__title ">Ипользую Git</label>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="fields-group fields-group-3">
+			<div class="fields-group__header">
+				<h3 class="fields-group__title">Уровень владения JavaScript</h3>
+			</div>
+			<div class="fields-group__body">
+				<div class="slider-main">
+					<p class="slider-main__values">
+						<span class="slider-main__value slider-main__value-1">Не владею</span>
+						<span class="slider-main__value slider-main__value-2">Использую готовые решения</span>
+						<span class="slider-main__value slider-main__value-3">Использую готовые решения и умею и переделывать</span>
+						<span class="slider-main__value slider-main__value-4">Пишу сложный JS с нуля</span>
+					</p>
+					<div class="slider-range-max">
+						<div id="slider-range-max" ></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="fields-group fields-group-4"> 
+			<div class="fields-group__header">
+				<h3 class="fields-group__title">Расскажите о себе</h3>
+				<p class="fields-group__descr">Напишите несколько предложений, чем привлекла наша вакансия и что вы ожидаете от работы у нас.</p>
+			</div>
+			<div class="fields-group__body">
+				<textarea class="questionnaire-input questionnaire-input_textarea" placeholder="Понравилась тем, что...">Надеюсь на подальшее развитие с вашей компанией вместе с хорошими условиями работы, стабильностю.</textarea>
+			</div>
+		</div>
+
+		<input type="submit" name="" value="Готово" class="fields-group__ready-btn">
+	</form>
+
+	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/js/select2.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/main.js" ></script>
+
+	<script>
+		// $(document).ready(function() {
+		// 	$('.menu-trigger').click(function() {
+		// 		$('nav.header-menu__block-menu ul.header-menu__menu').slideToggle(500);
+		// 	});
+
+		// 	$('.catalog > span').click(function() {
+		// 		$('nav.header-menu__block-menu ul.first-sub-menu').slideToggle(500);
+		// 	});
+
+		// 	$('.sub-menu__three').click(function() {
+		// 		$('.third-sub-menu').slideToggle(500);
+		// 	});
+		// });
+
+		// $(window).resize(function() {
+		// 	if($(window).width() > 700) {
+		// 		$('nav.header-menu__block-menu ul.header-menu__menu ').removeAttr('style');
+		// 	}
+
+		// 	if($(window).width() > 700) {
+		// 		$('nav.header-menu__block-menu ul.first-sub-menu').removeAttr('style');
+		// 	}
+
+		// 	if($(window).width() > 700) {
+		// 		$('nav.header-menu__block-menu ul.first-sub-menu').removeAttr('style');
+		// 	}
+		// });
+	</script>
+</body>
+</html>
